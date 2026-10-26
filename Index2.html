@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Photo Gallery</title>
+<style>
+body {
+    font-family: sans-serif;
+    background-color: #eaeaea;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+/* Flex Container */
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* Flex Child */
+.photo-box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 220px;
+    max-width: 260px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.photo-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+.photo-box p {
+    margin: 8px 0 0 0;
+    font-weight: bold;
+    color: #333;
+}
+.photo-box:hover {
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+</style>
+</head>
+<body>
+<h2>My Photo Gallery</h2>
+<div class="gallery-container">
+    <div class="photo-box">
+        <img src="butterfly_3.png" alt="Photo 1">
+        <p>Butterfly 1</p>
+    </div>
+    <div class="photo-box">
+        <img src="butterfly_3.png" alt="Photo 2">
+        <p>Butterfly 2</p>
+    </div>
+    <div class="photo-box">
+        <img src="butterfly_3.png" alt="Photo 3">
+        <p>Butterfly 3</p>
+    </div>
+    <div class="photo-box">
+        <img src="butterfly_3.png" alt="Photo 4">
+        <p>Butterfly 4</p>
+    </div>
+</div>
+</body>
+</html>
